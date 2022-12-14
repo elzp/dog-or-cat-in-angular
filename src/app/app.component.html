@@ -1,6 +1,6 @@
 <div id="container" class="w-4/5 mx-auto">
   <h1 class="text-center text-white text-4xl font-bold mb-10">Pies czy kot?</h1>
   <div class="flex flex-col sm:flex-row" *ngFor="let el of cards">
-    <card [card]="el"></card>
+    <card [card]="el.name" [number]="el.number"></card>
   </div>
 </div>

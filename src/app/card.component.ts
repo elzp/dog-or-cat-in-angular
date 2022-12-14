@@ -7,5 +7,6 @@ import { clickData } from './interfaces';
 })
 export class CardComponent {
   @Input() card: string;
+  @Input() number: number;
   @Output() sendClickData: EventEmitter<clickData>;
 }
