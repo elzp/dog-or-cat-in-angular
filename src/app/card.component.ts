@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-// import { clickData } from './interfaces';
+
 @Component({
   selector: 'card',
   templateUrl: './card.component.html',
