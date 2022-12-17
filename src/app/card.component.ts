@@ -11,7 +11,6 @@ export class CardComponent {
   @Output() sendClickData: EventEmitter<string> = new EventEmitter();
 
   onClick() {
-    console.log(this.card);
     this.sendClickData.emit(this.card);
   }
 }
