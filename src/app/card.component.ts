@@ -9,4 +9,9 @@ export class CardComponent {
   @Input() card: string;
   @Input() number: number;
   @Output() sendClickData: EventEmitter<string> = new EventEmitter();
+
+  onClick() {
+    console.log(this.card);
+    this.sendClickData.emit(this.card);
+  }
 }
